@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  turso:
+    image: tursodatabase/libsql:latest
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./data:/data 

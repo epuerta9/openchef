@@ -1,0 +1,22 @@
+package pages
+
+import "github.com/epuerta9/openchef/web/templates/components"
+
+templ Layout(content templ.Component) {
+	<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			<meta charset="UTF-8"/>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+			<title>MyApp</title>
+			<link rel="stylesheet" href="/static/css/main.css"/>
+		</head>
+		<body>
+			@components.Navbar()
+			<main>
+				@content
+			</main>
+			<script src="/static/js/main.js"></script>
+		</body>
+	</html>
+}

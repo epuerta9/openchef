@@ -1,0 +1,14 @@
+package pages
+
+import (
+	"github.com/epuerta9/openchef/web/templates/components"
+)
+
+templ Home() {
+	@Layout(components.Navbar()) {
+		<div class="container">
+			<h1>Welcome to MyApp</h1>
+			<p>This is a simple home page.</p>
+		</div>
+	}
+}

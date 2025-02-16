@@ -1,0 +1,63 @@
+myapp/
+├── .air.toml
+├── Makefile
+├── docker-compose.yml
+├── go.mod
+├── cmd/
+│   ├── api/
+│   │   └── main.go
+│   └── worker/
+│       └── main.go
+├── internal/
+│   ├── config/
+│   │   └── config.go
+│   ├── database/
+│   │   ├── migrations/  # Atlas migrations
+│   │   ├── queries/     # SQLC queries
+│   │   └── schema/      # Database schema
+│   │   └── database.go
+│   ├── models/
+│   │   └── models.go
+│   ├── server/
+│   │   └── server.go
+│   └── services/
+│       ├── auth/
+│       │   └── service.go
+│       └── user/
+│           └── service.go
+├── pkg/
+│   └── common/
+│       └── utils.go
+├── web/
+│   ├── handlers/
+│   │   └── handlers.go
+│   ├── templates/
+│   │   ├── components/
+│   │   │   └── navbar.templ
+│   │   └── pages/
+│   │       ├── home.templ
+│   │       └── layout.templ
+│   └── static/
+│       ├── css/
+│       │   └── main.css
+│       └── js/
+│           └── main.js
+├── docs/
+│   ├── database/
+│   │   ├── migrations.md
+│   │   ├── queries.md
+│   │   └── schema.md
+│   │
+│   ├── messaging/
+│   │   ├── nats-config.md
+│   │   └── nats-setup.md
+│   │
+│   ├── server/
+│   │   ├── api.md
+│   │   └── handlers.md
+│   │
+│   └── development/
+│       ├── installation.md
+│       └── tooling.md
+│
+└── README.md 
